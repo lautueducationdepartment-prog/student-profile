@@ -24,7 +24,7 @@
 const params = new URLSearchParams(window.location.search);
 const regno = params.get("regno");
 
-fetch("https://script.google.com/macros/s/AKfycbwCYnFXozB2DqD865Blo5_X2yiuyY6CYN6VX6WJWqicUjBOoG9GYZ9JGyosI5eCnaGFWA/exec?regno=" + regno)
+fetch("https://script.google.com/macros/s/AKfycbxF2d6GyYDiMtV767FSLai04Hl6393zfSWKzq8K93bVn2mwuk1XwYnXslWpPXAtsS434g/exec?regno=" + regno)
 .then(res => res.json())
 .then(data => {
     document.getElementById("name").innerText = data.name;
